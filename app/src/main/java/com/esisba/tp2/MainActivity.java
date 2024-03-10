@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.HorizontalScrollView;
-import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.card.MaterialCardView;
 
@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     MaterialCardView card1, card2, card3, card4, card5, reset;
     HorizontalScrollView scrol1, scrol2, scrol3, scrol4, scrol5;
     Boolean bool1, bool2, bool3, bool4, bool5;
+    int rak3at1, rak3at2, rak3at3, rak3at4, rak3at5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
         bool3 = false;
         bool4 = false;
         bool5 = false;
+        rak3at1 = 2;
+        rak3at2 = 4;
+        rak3at3 = 4;
+        rak3at4 = 3;
+        rak3at5 = 4;
     }
 
     private void onClicks() {
@@ -92,6 +98,38 @@ public class MainActivity extends AppCompatActivity {
                 bool5 = true;
                 SetVisibility();
                 return true;
+            }
+        });
+
+        // Add a click listener to the to each card that shows a toast of the number of rak3at
+        card1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Subh: " + rak3at1, Toast.LENGTH_SHORT).show();
+            }
+        });
+        card2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Duhr: " + rak3at2, Toast.LENGTH_SHORT).show();
+            }
+        });
+        card3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Asr: " + rak3at3, Toast.LENGTH_SHORT).show();
+            }
+        });
+        card4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Maghreb: " + rak3at4, Toast.LENGTH_SHORT).show();
+            }
+        });
+        card5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Ichaa: " + rak3at5, Toast.LENGTH_SHORT).show();
             }
         });
     }
