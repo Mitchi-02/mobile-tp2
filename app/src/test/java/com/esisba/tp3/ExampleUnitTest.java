@@ -1,4 +1,4 @@
-package com.esisba.tp2;
+package com.esisba.tp3;
 
 import org.junit.Test;
 

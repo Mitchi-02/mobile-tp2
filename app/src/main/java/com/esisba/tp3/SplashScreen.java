@@ -1,4 +1,4 @@
-package com.esisba.tp2;
+package com.esisba.tp3;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -7,11 +7,7 @@ import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class SplashScreen extends AppCompatActivity {
 

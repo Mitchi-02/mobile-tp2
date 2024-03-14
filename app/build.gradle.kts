@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.esisba.tp2"
+    namespace = "com.esisba.tp3"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.esisba.tp2"
+        applicationId = "com.esisba.tp3"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
